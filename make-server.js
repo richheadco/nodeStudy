@@ -6,6 +6,9 @@ let server = http.createServer(
     // req: 클라이언트 요청에 관한 객체
     // res: 서버가 할 응답에 관한 객체
     function(req, res) {
+        // url값 받아오기
+        console.log(req.url);
+        // 웹 페이지에 표시
         res.end('<h1>Hello world!</h1><h2>Your PORT Number is ' + PORT + '</h2>');
     }
 );
